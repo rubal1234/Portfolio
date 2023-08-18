@@ -1,3 +1,10 @@
+.carousel-root{
+	width: 100%;
+	margin: auto;
+}
+.carousel .slide .legend{
+	opacity: 0.75 !important;
+}
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -78,6 +85,10 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+.carousel-row{
+	display: flex;
+	width: 100%;
+}
 @media only screen and (min-width : 768px){
     #projects .project-item {
 		flex-direction: row;
@@ -97,5 +108,25 @@
 	#projects .all-projects .project-img {
 		height: 100%;
 		flex-basis: 50%;
+	}
+}
+.carousel-part{
+	margin: 20px auto;
+}
+@media only screen and (max-width : 1181px){
+	.carousel-row{
+		display: block;
+	}
+	.carousel-part{
+		width: 80%;
+	}
+	.carousel-part p{
+		text-align: center !important;
+	}
+}
+
+@media only screen and (max-width : 576px){
+	.legend{
+		display: none;
 	}
 }
